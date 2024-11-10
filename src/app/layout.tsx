@@ -3,13 +3,12 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Header from './components/header'
 import Footer from './components/footer'
-import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Oluwarotimi Adewumi - Frontend Developer',
-  description: 'Portfolio website of John Doe, a frontend developer specializing in React and Next.js',
+  description: 'Professional portfolio of Oluwarotimi Adewumi, a frontend developer specializing in React and Next.js',
 }
 
 export default function RootLayout({
@@ -18,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.className} bg-gray-900 text-white`}>
         <Header />
         {children}
         <Footer />
