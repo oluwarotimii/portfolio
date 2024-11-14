@@ -6,22 +6,22 @@ import Image from 'next/image'
 
 const projects = [
   {
-    title: "E-commerce Website",
-    description: "A fully responsive e-commerce website built with Next.js and Tailwind CSS.",
+    title: "CGLA Website",
+    description: "A fully responsive  website for the Centre for Geospatial Learning and Advancement built with Next.js and Tailwind CSS.",
     imageUrl: "/placeholder.svg?height=300&width=500",
     liveUrl: "#",
     githubUrl: "#"
   },
   {
-    title: "Task Management App",
-    description: "A React-based task management application with drag-and-drop functionality.",
+    title: "TrimWizard",
+    description: "A web application for cropping images in bulk",
     imageUrl: "/placeholder.svg?height=300&width=500",
     liveUrl: "#",
     githubUrl: "#"
   },
   {
-    title: "Weather Dashboard",
-    description: "A weather dashboard that displays current and forecasted weather using a third-party API.",
+    title: "Edflow web App",
+    description: "The  Web  interface for Edflow a software for schools to manage assesment and attendance and also monitor students and teachers data ",
     imageUrl: "/placeholder.svg?height=300&width=500",
     liveUrl: "#",
     githubUrl: "#"

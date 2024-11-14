@@ -37,14 +37,15 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <p className="text-lg mb-4 text-gray-300">
-              Hello! I'm Oluwarotimi Adewumi, a passionate frontend developer with a keen eye for creating beautiful and functional user interfaces. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building responsive and intuitive web applications using modern frameworks like React and Next.js.
+              Hi! I'm Oluwarotimi Adewumi, a frontend developer with an eye for creating intuitive, responsive and functional user interfaces. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building web applications using modern frameworks like React and Next.js.
             </p>
             <p className="text-lg mb-4 text-gray-300">
               My journey in web development started with a fascination for how design and technology intersect to create meaningful user experiences. This passion has driven me to continuously learn and adapt to the ever-evolving landscape of frontend development.
             </p>
-            <p className="text-lg text-gray-300">
-              When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or sharing my knowledge through blog posts and community events.
+            <p className="text-lg mb-4 text-gray-300">
+              I have being able to acquire  more than  2 years experience in builidng intuitive  web applications using  react and Next.js, I am ready and always available to help you build your next web app
             </p>
+           
           </motion.div>
         </div>
       </div>
