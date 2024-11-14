@@ -8,23 +8,30 @@ const projects = [
   {
     title: "CGLA Website",
     description: "A fully responsive  website for the Centre for Geospatial Learning and Advancement built with Next.js and Tailwind CSS.",
-    imageUrl: "/placeholder.svg?height=300&width=500",
-    liveUrl: "#",
-    githubUrl: "#"
+    imageUrl: "/cgla.png?height=300&width=500",
+    liveUrl: "https://cglaweb.vercel.app/",
+    githubUrl: "https://github.com/oluwarotimii/cglaweb"
   },
   {
     title: "TrimWizard",
     description: "A web application for cropping images in bulk",
-    imageUrl: "/placeholder.svg?height=300&width=500",
+    imageUrl: "/trimlogo.ico?height=100&width=200",
+    liveUrl: "https://trimwiz.vercel.app/",
+    githubUrl: "https://github.com/oluwarotimii/TrimWizard"
+  },
+  {
+    title: "Edflow Web App",
+    description: "The  Web  interface for Edflow a software for schools to manage assesment and attendance and also monitor students and teachers data ",
+    imageUrl: "/edflow.jpg?height=300&width=500",
     liveUrl: "#",
     githubUrl: "#"
   },
   {
-    title: "Edflow web App",
-    description: "The  Web  interface for Edflow a software for schools to manage assesment and attendance and also monitor students and teachers data ",
-    imageUrl: "/placeholder.svg?height=300&width=500",
-    liveUrl: "#",
-    githubUrl: "#"
+    title: "Geospatial Web Map Project",
+    description: "The  Web  interface for a GIS project for Akwa Ibom state ",
+    imageUrl: "/ibom.jpg?height=300&width=500",
+    liveUrl: "https://ibommap.vercel.app/",
+    githubUrl: "https://github.com/oluwarotimii/maps-challenge/tree/master"
   }
 ]
 

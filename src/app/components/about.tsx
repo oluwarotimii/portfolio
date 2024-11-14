@@ -23,7 +23,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <Image 
-              src="/placeholder.svg?height=400&width=400" 
+              src="/ro.jpeg?height=400&width=400" 
               alt="Oluwarotimi Adewumi" 
               width={400} 
               height={400} 
