@@ -6,7 +6,7 @@ import Contact from './components/contact'
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="flex flex-col justify-center  min-h-screen ">
       <Hero />
       <About />
       <Skills />
