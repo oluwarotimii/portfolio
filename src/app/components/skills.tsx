@@ -18,14 +18,14 @@ export default function Skills() {
     <section id="skills" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.h2 
-          className="text-3xl font-bold mb-8 text-center text-amber-400"
+          className="text-2xl md:text-3xl font-bold mb-8 text-center text-amber-400"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           Skills
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill, index) => (
             <motion.div 
               key={skill.name}
@@ -35,8 +35,8 @@ export default function Skills() {
               transition={{ duration: 0.8, delay: index * 0.1 }}
             >
               <div className="flex justify-between mb-2">
-                <span className="text-lg font-medium text-gray-200">{skill.name}</span>
-                <span className="text-gray-400">{skill.level}%</span>
+                <span className="text-base md:text-lg font-medium text-gray-200">{skill.name}</span>
+                <span className="text-sm md:text-base text-gray-400">{skill.level}%</span>
               </div>
               <div className="w-full bg-gray-700 rounded-full h-2.5">
                 <motion.div 

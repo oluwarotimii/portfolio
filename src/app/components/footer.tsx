@@ -14,12 +14,13 @@ export default function Footer() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            &copy; {currentYear}Oluwarotimi Adewumi. All rights reserved.
+            &copy; {currentYear} Oluwarotimi Adewumi. All rights reserved.
           </motion.p>
           <motion.div 
             className="flex space-x-4 mt-4 md:mt-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
+            
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             {[{

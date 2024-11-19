@@ -3,23 +3,78 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 0 0% 9%;
-  --primary: 221 83% 53%;
-  --primary-foreground: 0 0% 100%;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 93%;
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
-  }
+  --background: 193 28% 16%;
+  --foreground: 162 89% 39%;
+  --muted: 187 28% 44%;
+  --muted-foreground: 60 89% 81%;
+  --accent: 186 100% 14%;
+  --accent-foreground: 0 0% 100%;
 }
 
 @layer base {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Responsive typography */
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Responsive spacing */
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+/* Responsive sections */
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
 }
