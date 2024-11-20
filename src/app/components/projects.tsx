@@ -7,18 +7,26 @@ import { ExternalLink, GitlabIcon as GitHub } from 'lucide-react'
 
 const projects = [
   {
-    title: "CGLA Website",
-    description: "A fully responsive  website for the Centre for Geospatial Learning and Advancement built with Next.js and Tailwind CSS.",
+    title: "Datolla Website",
+    description: "A fully responsive  website a compnay",
     imageUrl: "/cgla.png?height=300&width=500",
-    liveUrl: "https://cglaweb.vercel.app/",
+    liveUrl: "https://datolla.vercel.app/",
     githubUrl: "https://github.com/oluwarotimii/cglaweb"
   },
+ 
   {
     title: "TrimWizard",
     description: "A web application for cropping images in bulk",
     imageUrl: "/trimlogo.ico?height=100&width=200",
     liveUrl: "https://trimwiz.vercel.app/",
     githubUrl: "https://github.com/oluwarotimii/TrimWizard"
+  },
+  {
+    title: "CGLA Website",
+    description: "A fully responsive  website for the Centre for Geospatial Learning and Advancement built with Next.js and Tailwind CSS.",
+    imageUrl: "/cgla.png?height=300&width=500",
+    // liveUrl: "https://cglaweb.vercel.app/",
+    githubUrl: "https://github.com/oluwarotimii/cglaweb"
   },
   {
     title: "Edflow Web App",

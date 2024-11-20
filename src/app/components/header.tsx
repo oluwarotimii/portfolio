@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <motion.header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-gray-900/90 shadow-lg' : 'bg-transparent'}`}
+      className={`sticky top-0 z-50 w-full border-b px-10 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 ${isScrolled ? 'bg-gray-900/90 shadow-lg' : 'bg-transparent'}`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
