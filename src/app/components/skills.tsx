@@ -27,15 +27,11 @@ const skills = [
   { name: 'MongoDB', icon: <SiMongodb className="text-green-600 text-4xl" /> },
   { name: 'Python', icon: <FaPython className="text-yellow-300 text-4xl" /> },
   { name: 'REST APIs', icon: <SiPostman className="text-orange-500 text-4xl" /> },
-
-  // New Skills
   { name: 'Next.js', icon: <SiNextdotjs className="text-black text-4xl" /> },
   { name: 'Supabase', icon: <SiSupabase className="text-green-500 text-4xl" /> },
   { name: 'Firebase', icon: <SiFirebase className="text-yellow-500 text-4xl" /> },
   { name: 'Expo', icon: <SiExpo className="text-black text-4xl" /> },
   { name: 'FastAPI', icon: <SiFastapi className="text-green-600 text-4xl" /> },
-
-  // Additional Skills
   { name: 'Docker', icon: <SiDocker className="text-blue-500 text-4xl" /> },
   { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-600 text-4xl" /> },
   { name: 'Redux', icon: <SiRedux className="text-purple-500 text-4xl" /> },
