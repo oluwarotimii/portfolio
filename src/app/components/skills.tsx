@@ -1,15 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import {
-  FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaPython,
-  FaGithub, FaGitlab, FaDatabase
-} from 'react-icons/fa'
-import { SiTailwindcss, SiTypescript, SiMongodb, SiPostman } from 'react-icons/si'
-
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaGithub, FaGitlab, FaNodeJs, FaPython } from 'react-icons/fa'
-import { SiTailwindcss, SiTypescript, SiMongodb, SiPostman, SiNextdotjs, SiSupabase, SiFirebase, SiExpo, SiFastapi } from 'react-icons/si'
-
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaGithub, FaGitlab, FaNodeJs, FaPython } from 'react-icons/fa'
 import { SiTailwindcss, SiTypescript, SiMongodb, SiPostman, SiNextdotjs, SiSupabase, SiFirebase, SiExpo, SiFastapi, SiDocker, SiPostgresql, SiRedux, SiExpress } from 'react-icons/si'
 
@@ -37,6 +28,7 @@ const skills = [
   { name: 'Redux', icon: <SiRedux className="text-purple-500 text-4xl" /> },
   { name: 'Express.js', icon: <SiExpress className="text-gray-600 text-4xl" /> },
 ]
+
 
 
 export default function Skills() {
