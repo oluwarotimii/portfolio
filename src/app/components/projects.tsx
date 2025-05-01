@@ -105,7 +105,7 @@ export default function Projects() {
                       GitHub
                     </a>
                   )}
-                  {project.appUrl && (
+{/*                   {project.appUrl && (
                     <a
                       href={project.appUrl}
                       target="_blank"
@@ -115,7 +115,7 @@ export default function Projects() {
                       <Smartphone className="w-4 h-4 md:w-5 md:h-5 mr-1" />
                       App
                     </a>
-                  )}
+                  )} */}
                 </div>
               </div>
             </motion.div>
