@@ -1,23 +1,27 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import {
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaPython,
+  FaGithub, FaGitlab, FaDatabase
+} from 'react-icons/fa'
+import { SiTailwindcss, SiTypescript, SiMongodb, SiPostman } from 'react-icons/si'
 
 const skills = [
-  { name: 'HTML5', level: 90 },
-  { name: 'CSS3', level: 85 },
-  { name: 'JavaScript', level: 80 },
-  { name: 'React', level: 85 },
-  { name: 'React', level: 70 },
-  { name: 'Tailwind CSS', level: 80 },
-  { name: 'TypeScript', level: 70 },
-  { name: 'Git', level: 75 },
-  { name: 'Node.js', level: 70 },
-  { name: 'REST APIs', level: 70 },
-  { name: 'MongoDB', level: 65 },
-  { name: 'Python', level: 70 },
-  { name: 'Version Control (GitHub/GitLab)', level: 80 },
+  { name: 'HTML5', icon: <FaHtml5 className="text-orange-500 text-4xl" /> },
+  { name: 'CSS3', icon: <FaCss3Alt className="text-blue-500 text-4xl" /> },
+  { name: 'JavaScript', icon: <FaJs className="text-yellow-400 text-4xl" /> },
+  { name: 'React', icon: <FaReact className="text-cyan-400 text-4xl" /> },
+  { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-sky-400 text-4xl" /> },
+  { name: 'TypeScript', icon: <SiTypescript className="text-blue-400 text-4xl" /> },
+  { name: 'Git', icon: <FaGitAlt className="text-orange-400 text-4xl" /> },
+  { name: 'GitHub', icon: <FaGithub className="text-white text-4xl" /> },
+  { name: 'GitLab', icon: <FaGitlab className="text-orange-500 text-4xl" /> },
+  { name: 'Node.js', icon: <FaNodeJs className="text-green-500 text-4xl" /> },
+  { name: 'MongoDB', icon: <SiMongodb className="text-green-600 text-4xl" /> },
+  { name: 'Python', icon: <FaPython className="text-yellow-300 text-4xl" /> },
+  { name: 'REST APIs', icon: <SiPostman className="text-orange-500 text-4xl" /> },
 ]
-
 
 export default function Skills() {
   return (
@@ -31,27 +35,18 @@ export default function Skills() {
         >
           Skills
         </motion.h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
           {skills.map((skill, index) => (
-            <motion.div 
+            <motion.div
               key={skill.name}
-              className="bg-gray-800 p-4 rounded-lg"
+              className="flex flex-col items-center justify-center bg-gray-800 rounded-lg p-6 shadow hover:shadow-lg hover:scale-105 transition"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
             >
-              <div className="flex justify-between mb-2">
-                <span className="text-base md:text-lg font-medium text-gray-200">{skill.name}</span>
-                <span className="text-sm md:text-base text-gray-400">{skill.level}%</span>
-              </div>
-              <div className="w-full bg-gray-700 rounded-full h-2.5">
-                <motion.div 
-                  className="bg-amber-600 h-2.5 rounded-full"
-                  initial={{ width: 0 }}
-                  animate={{ width: `${skill.level}%` }}
-                  transition={{ duration: 1, delay: 0.5 + index * 0.1 }}
-                ></motion.div>
-              </div>
+              {skill.icon}
+              <p className="text-gray-200 mt-2 text-sm font-medium">{skill.name}</p>
             </motion.div>
           ))}
         </div>
