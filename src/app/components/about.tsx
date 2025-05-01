@@ -26,13 +26,13 @@ export default function About() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <Image 
+{/*             <Image 
               src="/ro.jpeg?height=400&width=400" 
               alt="Oluwarotimi Adewumi" 
               width={400} 
               height={400}
               className="rounded-lg shadow-lg w-full max-w-md mx-auto"
-            />
+            /> */}
           </motion.div>
           <motion.div 
             className="md:w-1/2 md:pl-8"
