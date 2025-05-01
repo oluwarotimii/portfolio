@@ -3,7 +3,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { ExternalLink, GitlabIcon as GitHub } from 'lucide-react'
+import { ExternalLink, Smartphone, GitlabIcon as GitHub } from 'lucide-react'
 
 const projects = [
   {
@@ -25,22 +25,22 @@ const projects = [
     title: "CGLA Website",
     description: "A fully responsive  website for the Centre for Geospatial Learning and Advancement built with Next.js and Tailwind CSS.",
     imageUrl: "/cgla.png?height=300&width=500",
-    // liveUrl: "https://cglaweb.vercel.app/",
+    liveUrl: "https://cglaweb.vercel.app/",
     githubUrl: "https://github.com/oluwarotimii/cglaweb"
   },
   {
     title: "Edflow Web App",
     description: "The  Web  interface for Edflow a software for schools to manage assesment and attendance and also monitor students and teachers data ",
     imageUrl: "/edflow.jpg?height=300&width=500",
-    liveUrl: "#",
-    githubUrl: "#"
+    liveUrl: "https://edflow.vercel.app/",
+    githubUrl: "https://github.com/oluwarotimii/edflow"
   },
   {
-    title: "Geospatial Web Map Project",
-    description: "The  Web  interface for a GIS project for Akwa Ibom state ",
-    imageUrl: "/ibom.jpg?height=300&width=500",
-    liveUrl: "https://ibommap.vercel.app/",
-    githubUrl: "https://github.com/oluwarotimii/maps-challenge/tree/master"
+    title: "Radio Mobile app",
+    description: "Mobile App for Fortress FM (Check out on Playstore with the Github l)",
+    imageUrl: "https://media.gettyimages.com/id/1366227840/photo/media-equipment-in-the-live-room-of-a-radio-station.jpg?s=612x612&w=gi&k=20&c=bKNv8qmo_0xE-Pp2RfHG8IlDBrrxDAASa-HAxnHttI8=",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.kelweb.fortressFM",
+    // appUrl: ""
   }
 ]
 
@@ -76,6 +76,7 @@ export default function Projects() {
                   </a>
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center text-amber-400 hover:text-amber-300 text-sm md:text-base">
                     {/* <GitHub className="w-4 h-4 md:w-5 md:h-5 mr-1" /> */}
+                  <a href={project.appUrl} target="_blank" rel="noopener noreferrer" className="flex items-center text-amber-400 hover:text-amber-300 text-sm md:text-base">
                    
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
