@@ -14,6 +14,19 @@
 @layer base {
   body {
     @apply bg-background text-foreground;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    width: 100vw; /* Make sure the body takes the full width */
+    height: 100vh; /* Make sure the body takes the full height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  html {
+    @apply bg-background;
+    margin: 0; /* Remove default html margin */
+    padding: 0; /* Remove default html padding */
+    width: 100%; /* Ensure html element takes the full width */
+    height: 100%; /* Ensure html element takes the full height */
   }
 }
 
@@ -38,6 +51,7 @@ html {
 .container {
   padding-left: 1rem;
   padding-right: 1rem;
+  width: 100%; /* Ensure the container takes the full width */
 }
 
 @media (min-width: 640px) {
