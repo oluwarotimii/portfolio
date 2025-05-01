@@ -36,13 +36,13 @@ const projects = [
   {
     title: "Radio Mobile app",
     description: "Mobile App for Fortress FM (Check it out on the Play Store)",
-    imageUrl: "https://media.gettyimages.com/id/1366227840/photo/media-equipment-in-the-live-room-of-a-radio-station.jpg?s=612x612&w=gi&k=20&c=bKNv8qmo_0xE-Pp2RfHG8IlDBrrxDAASa-HAxnHttI8=",
+    imageUrl: "https://play-lh.googleusercontent.com/EXDvndcsMOx9FpXvZ-MyG_06IKgx6wVOpaxhJBO1ACQNGsPf2KGCZpLP5HjQC9ZskbLG",
     liveUrl: "https://play.google.com/store/apps/details?id=com.kelweb.fortressFM"
   },
   {
     title: "xplorecars",
     description: "Vehicle listing website",
-    imageUrl: "https://xplorecarss.netlify.app/_next/image?url=%2FxploreCarsLogo.png&w=256&q=75",
+    imageUrl: "https://media.istockphoto.com/id/1273534607/vector/car-icon-auto-vehicle-isolated-transport-icons-automobile-silhouette-front-view-sedan-car.jpg?s=612x612&w=0&k=20&c=hpl9DfPNZ4EquzqsiVPmq1828pkFv0KkdkesxKdLk2Y=",
     liveUrl: "https://xplorecarss.netlify.app"
   }
 ]
