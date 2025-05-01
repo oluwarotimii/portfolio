@@ -19,13 +19,13 @@ const projects = [
     liveUrl: "https://trimwiz.vercel.app/",
     githubUrl: "https://github.com/oluwarotimii/TrimWizard"
   },
-  {
-    title: "CGLA Website",
-    description: "A fully responsive website for the Centre for Geospatial Learning and Advancement built with Next.js and Tailwind CSS.",
-    imageUrl: "/cgla.png?height=300&width=500",
-    liveUrl: "https://cglaweb.vercel.app/",
-    githubUrl: "https://github.com/oluwarotimii/cglaweb"
-  },
+  // {
+  //   title: "CGLA Website",
+  //   description: "A fully responsive website for the Centre for Geospatial Learning and Advancement built with Next.js and Tailwind CSS.",
+  //   imageUrl: "/cgla.png?height=300&width=500",
+  //   // liveUrl: "https://cglaweb.vercel.app/",
+  //   githubUrl: "https://github.com/oluwarotimii/cglaweb"
+  // },
   {
     title: "Edflow Web App",
     description: "The web interface for Edflow, a software for schools to manage assessment and attendance.",
