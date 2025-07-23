@@ -8,14 +8,14 @@ const projects = [
   {
     title: "Datolla Website",
     description: "A fully responsive website for a company",
-    imageUrl: "/cgla.png?height=300&width=500",
+    // imageUrl: "/cgla.png?height=300&width=500",
     liveUrl: "https://datolla.vercel.app/",
     githubUrl: "https://github.com/oluwarotimii/cglaweb"
   },
   {
     title: "TrimWizard",
     description: "A web application for cropping images in bulk",
-    imageUrl: "/trimlogo.ico?height=100&width=200",
+    // imageUrl: "/trimlogo.ico?height=100&width=200",
     liveUrl: "https://trimwiz.vercel.app/",
     githubUrl: "https://github.com/oluwarotimii/TrimWizard"
   },
@@ -29,20 +29,20 @@ const projects = [
   {
     title: "Edflow Web App",
     description: "The web interface for Edflow, a software for schools to manage assessment and attendance.",
-    imageUrl: "/edflow.jpg?height=300&width=500",
+    // imageUrl: "/edflow.jpg?height=300&width=500",
     liveUrl: "https://edflow.vercel.app/",
     githubUrl: "https://github.com/oluwarotimii/edflow"
   },
   {
     title: "Radio Mobile app",
     description: "Mobile App for Fortress FM (Check it out on the Play Store)",
-    imageUrl: "https://play-lh.googleusercontent.com/EXDvndcsMOx9FpXvZ-MyG_06IKgx6wVOpaxhJBO1ACQNGsPf2KGCZpLP5HjQC9ZskbLG",
+    // imageUrl: "https://play-lh.googleusercontent.com/EXDvndcsMOx9FpXvZ-MyG_06IKgx6wVOpaxhJBO1ACQNGsPf2KGCZpLP5HjQC9ZskbLG",
     liveUrl: "https://play.google.com/store/apps/details?id=com.kelweb.fortressFM"
   },
   {
     title: "xplorecars",
     description: "Vehicle listing website",
-    imageUrl: "https://media.istockphoto.com/id/1273534607/vector/car-icon-auto-vehicle-isolated-transport-icons-automobile-silhouette-front-view-sedan-car.jpg?s=612x612&w=0&k=20&c=hpl9DfPNZ4EquzqsiVPmq1828pkFv0KkdkesxKdLk2Y=",
+    // imageUrl: "https://media.istockphoto.com/id/1273534607/vector/car-icon-auto-vehicle-isolated-transport-icons-automobile-silhouette-front-view-sedan-car.jpg?s=612x612&w=0&k=20&c=hpl9DfPNZ4EquzqsiVPmq1828pkFv0KkdkesxKdLk2Y=",
     liveUrl: "https://xplorecarss.netlify.app"
   }
 ]
