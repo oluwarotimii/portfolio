@@ -10,12 +10,12 @@ const projects = [
     tech: ["Python", "PDF Processing", "Data Analysis", "Financial Algorithms"],
     githubUrl: "https://github.com/oluwarotimii/banking-transcactions",
   },
-  {
-    title: "EventsFlow",
-    description: "Event management platform for organizing and tracking events",
-    tech: ["Next.js", "React", "TypeScript", "Event Management"],
-    liveUrl: "https://eventsflow.vercel.app/",
-  },
+  // {
+    // title: "EventsFlow",
+    // description: "Event management platform for organizing and tracking events",
+    // tech: ["Next.js", "React", "TypeScript", "Event Management"],
+    // liveUrl: "https://eventsflow.vercel.app/",
+  // },
   {
     title: "Tripa",
     description: "Travel planning and management application",
