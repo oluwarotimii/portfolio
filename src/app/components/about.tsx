@@ -24,9 +24,7 @@ export default function About() {
           <p className="text-base md:text-lg mb-4 text-gray-300">
             Hi! I'm Oluwarotimi Adewumi, a frontend developer with a passion for creating intuitive, responsive, and functional user interfaces. With a strong foundation in HTML, CSS, JavaScript, and React Native, I specialize in building both web and mobile applications using modern frameworks like React, Next.js, and React Native.
           </p>
-          <p className="text-base md:text-lg mb-4 text-gray-300">
-            My journey in development began with a fascination for how design and technology intersect to create seamless user experiences. This passion drives me to continuously learn and adapt to the ever-evolving world of frontend and mobile app development.
-          </p>
+         
           <p className="text-base md:text-lg text-gray-300">
             With over 3 years of experience building intuitive web and mobile applications, I'm always ready and excited to help you bring your next project to life.
           </p>
