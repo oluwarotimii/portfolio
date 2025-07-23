@@ -1,63 +1,70 @@
-'use client'
+"use client"
 
-import { motion } from 'framer-motion'
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaGithub, FaGitlab, FaNodeJs, FaPython } from 'react-icons/fa'
-import { SiTailwindcss, SiTypescript, SiMongodb, SiPostman, SiNextdotjs, SiSupabase, SiFirebase, SiExpo, SiFastapi, SiDocker, SiPostgresql, SiRedux, SiExpress } from 'react-icons/si'
+import { motion } from "framer-motion"
 
-const skills = [
-  { name: 'HTML5', icon: <FaHtml5 className="text-orange-500 text-4xl" /> },
-  { name: 'CSS3', icon: <FaCss3Alt className="text-blue-500 text-4xl" /> },
-  { name: 'JavaScript', icon: <FaJs className="text-yellow-400 text-4xl" /> },
-  { name: 'React', icon: <FaReact className="text-cyan-400 text-4xl" /> },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-sky-400 text-4xl" /> },
-  { name: 'TypeScript', icon: <SiTypescript className="text-blue-400 text-4xl" /> },
-  { name: 'Git', icon: <FaGitAlt className="text-orange-400 text-4xl" /> },
-  { name: 'GitHub', icon: <FaGithub className="text-white text-4xl" /> },
-  { name: 'GitLab', icon: <FaGitlab className="text-orange-500 text-4xl" /> },
-  { name: 'Node.js', icon: <FaNodeJs className="text-green-500 text-4xl" /> },
-  { name: 'MongoDB', icon: <SiMongodb className="text-green-600 text-4xl" /> },
-  { name: 'Python', icon: <FaPython className="text-yellow-300 text-4xl" /> },
-  { name: 'REST APIs', icon: <SiPostman className="text-orange-500 text-4xl" /> },
-  { name: 'Next.js', icon: <SiNextdotjs className="text-black text-4xl" /> },
-  { name: 'Supabase', icon: <SiSupabase className="text-green-500 text-4xl" /> },
-  { name: 'Firebase', icon: <SiFirebase className="text-yellow-500 text-4xl" /> },
-  { name: 'Expo', icon: <SiExpo className="text-black text-4xl" /> },
-  { name: 'FastAPI', icon: <SiFastapi className="text-green-600 text-4xl" /> },
-  { name: 'Docker', icon: <SiDocker className="text-blue-500 text-4xl" /> },
-  { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-600 text-4xl" /> },
-  { name: 'Redux', icon: <SiRedux className="text-purple-500 text-4xl" /> },
-  { name: 'Express.js', icon: <SiExpress className="text-gray-600 text-4xl" /> },
+const skillCategories = [
+  {
+    category: "frontend",
+    skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Redux"],
+  },
+  {
+    category: "mobile",
+    skills: ["React Native", "Expo", "Android Development", "iOS Development"],
+  },
+  {
+    category: "backend",
+    skills: ["Node.js", "Express.js", "FastAPI", "Python", "REST APIs", "PostgreSQL", "MongoDB"],
+  },
+  {
+    category: "tools",
+    skills: ["Git", "GitHub", "Docker", "Postman", "Firebase", "Supabase"],
+  },
 ]
-
-
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 bg-gray-900">
-      <div className="container mx-auto px-4">
-        <motion.h2 
-          className="text-2xl md:text-3xl font-bold mb-8 text-center text-amber-400"
+    <section id="skills" className="py-20 bg-black">
+      <div className="container max-w-4xl mx-auto px-4">
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
+          className="space-y-8"
         >
-          Skills
-        </motion.h2>
+          <h2 className="text-2xl font-mono text-green-400 mb-8">
+            <span className="text-gray-500">$</span> skills
+          </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
-          {skills.map((skill, index) => (
-            <motion.div
-              key={skill.name}
-              className="flex flex-col items-center justify-center bg-gray-800 rounded-lg p-6 shadow hover:shadow-lg hover:scale-105 transition"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-            >
-              {skill.icon}
-              <p className="text-gray-200 mt-2 text-sm font-medium">{skill.name}</p>
-            </motion.div>
-          ))}
-        </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {skillCategories.map((category, categoryIndex) => (
+              <motion.div
+                key={category.category}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
+                className="space-y-3"
+              >
+                <h3 className="font-mono text-blue-400 text-lg">{category.category}</h3>
+                <div className="space-y-2">
+                  {category.skills.map((skill, skillIndex) => (
+                    <motion.div
+                      key={skill}
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{
+                        duration: 0.5,
+                        delay: categoryIndex * 0.2 + skillIndex * 0.05,
+                      }}
+                      className="font-mono text-gray-300 text-sm"
+                    >
+                      • {skill}
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   )

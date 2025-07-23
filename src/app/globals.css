@@ -1,94 +1,23 @@
+/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: 193 28% 16%;
-  --foreground: 162 89% 39%;
-  --muted: 187 28% 44%;
-  --muted-foreground: 60 89% 81%;
-  --accent: 186 100% 14%;
-  --accent-foreground: 0 0% 100%;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
-@layer base {
-  body {
-    @apply bg-background text-foreground;
-    margin: 0; /* Remove default body margin */
-    padding: 0; /* Remove default body padding */
-    width: 100vw; /* Make sure the body takes the full width */
-    height: 100vh; /* Make sure the body takes the full height */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-  }
-
-  html {
-    @apply bg-background;
-    margin: 0; /* Remove default html margin */
-    padding: 0; /* Remove default html padding */
-    width: 100%; /* Ensure html element takes the full width */
-    height: 100%; /* Ensure html element takes the full height */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
   }
 }
 
-/* Responsive typography */
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 640px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1024px) {
-  html {
-    font-size: 18px;
-  }
-}
-
-/* Responsive spacing */
-.container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 100%; /* Ensure the container takes the full width */
-}
-
-@media (min-width: 640px) {
-  .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-}
-
-/* Responsive sections */
-section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-@media (min-width: 640px) {
-  section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-}
-
-/* Smooth scrolling for anchor links */
-html {
-  scroll-behavior: smooth;
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }

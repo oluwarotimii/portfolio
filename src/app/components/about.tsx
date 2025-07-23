@@ -1,35 +1,43 @@
-/* eslint-disable react/no-unescaped-entities */
+"use client"
 
-'use client'
-
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion"
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-gray-800 flex items-center justify-center">
-      <div className="container max-w-3xl text-center px-4">
-        <motion.h2 
-          className="text-2xl md:text-3xl font-bold mb-8 text-amber-400"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          About Me
-        </motion.h2>
+    <section id="about" className="py-20 bg-black">
+      <div className="container max-w-4xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
+          className="space-y-6"
         >
-          <p className="text-base md:text-lg mb-4 text-gray-300">
-            Hi! I'm Oluwarotimi Adewumi, a frontend developer with a passion for creating intuitive, responsive, and functional user interfaces. With a strong foundation in HTML, CSS, JavaScript, and React Native, I specialize in building both web and mobile applications using modern frameworks like React, Next.js, and React Native.
-          </p>
-          <p className="text-base md:text-lg mb-4 text-gray-300">
-            My journey in development began with a fascination for how design and technology intersect to create seamless user experiences. This passion drives me to continuously learn and adapt to the ever-evolving world of frontend and mobile app development.
-          </p>
-          <p className="text-base md:text-lg text-gray-300">
-            With over 3 years of experience building intuitive web and mobile applications, I'm always ready and excited to help you bring your next project to life.
-          </p>
+          <h2 className="text-2xl font-mono text-green-400 mb-8">
+            <span className="text-gray-500">$</span> whoami
+          </h2>
+
+          <div className="font-mono text-gray-300 space-y-4 text-sm leading-relaxed">
+            <p>
+              <span className="text-blue-400">name:</span> "Oluwarotimi Adewumi"
+            </p>
+            <p>
+              <span className="text-blue-400">role:</span> "Full-Stack Software Developer"
+            </p>
+            <p>
+              <span className="text-blue-400">experience:</span> "3+ years"
+            </p>
+            <p>
+              <span className="text-blue-400">location:</span> "Nigeria"
+            </p>
+            <p>
+              <span className="text-blue-400">capabilities:</span> ["Frontend Development", "Mobile Apps", "Backend
+              APIs", "Database Design"]
+            </p>
+            <p>
+              <span className="text-blue-400">focus:</span> "Building complete end-to-end solutions from database to
+              user interface"
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>
