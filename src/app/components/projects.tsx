@@ -52,7 +52,7 @@ const projects = [
   },
   {
     title: "XploreCars",
-    description: "Vehicle listing and search platform",
+    description: "Vehicle listing ",
     tech: ["React", "API Integration", "Search Functionality"],
     liveUrl: "https://xplorecarss.netlify.app",
   },
