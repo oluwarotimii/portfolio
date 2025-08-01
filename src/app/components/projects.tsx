@@ -18,9 +18,9 @@ const projects = [
   },
   {
     title: "Tripa",
-    description: "Travel planning and management application",
+    description: "transport payment platform",
     tech: ["Next.js", "React", "TypeScript", "Travel Tech"],
-    liveUrl: "https://tripa.vercel.app/",
+    liveUrl: "www.tripa.com.ng",
   },
   {
     title: "Datolla Website",
