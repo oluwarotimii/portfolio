@@ -37,16 +37,31 @@ html {
 
 body {
   color: #f3f4f6;
-  background: hsl(var(--background)); /* Use CSS variable for background */
+  background: hsl(var(--background));
   font-family: var(--font-jetbrains-mono), var(--font-inter), ui-monospace, SFMono-Regular, Monaco, Consolas,
     "Liberation Mono", Menlo, monospace;
   line-height: 1.6;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
+}
+
+@media (min-width: 640px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
 }
 
 ::-webkit-scrollbar-track {
@@ -80,9 +95,15 @@ body {
   }
 }
 
-/* Glow effects */
+/* Glow effects - reduced on mobile for performance */
 .glow-green {
   text-shadow: 0 0 10px #10b981;
+}
+
+@media (max-width: 640px) {
+  .glow-green {
+    text-shadow: 0 0 5px #10b981;
+  }
 }
 
 .glow-blue {
@@ -99,11 +120,36 @@ body {
   transform: translateY(-2px);
 }
 
+@media (max-width: 640px) {
+  .hover-glow:hover {
+    transform: translateY(-1px);
+  }
+}
+
 /* Card hover effects */
 .card-hover:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(16, 185, 129, 0.1);
   border-color: #10b981;
+}
+
+@media (max-width: 640px) {
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.08);
+  }
+}
+
+/* Mobile tap highlight reset */
+@media (max-width: 640px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Prevent text size adjustment on orientation change */
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 .dark {

@@ -6,6 +6,7 @@ import Contact from ".././src/app/components/contact"
 import Header from ".././src/app/components/header"
 import Footer from ".././src/app/components/footer"
 
+
 export default function Home() {
   return (
     <main>
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <About />
       <Skills />
+
       <Projects />
       <Contact />
       <Footer />
