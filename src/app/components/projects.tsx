@@ -183,7 +183,7 @@ export default function Projects() {
 
                     <div className="text-center mt-2">
                       <span className="font-mono text-xs text-gray-700">
-                        {expandedIndex === index ? "▲ collapse" : "▼ expand"}
+                        {expandedIndex === index ? "[-] collapse" : "[+] expand"}
                       </span>
                     </div>
 
